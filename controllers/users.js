@@ -13,4 +13,10 @@ function createUser(request, response) {
     });
 };
 
-module.exports = createUser;
+function getUsers(request, response) {
+    User.find().then(function (users) {
+        response.send(users);
+    });
+}
+
+module.exports = {createUser, getUsers};
