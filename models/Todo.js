@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const TodoSchema = new mongoose.Schema({
-    id:{
+    Owner_id:{
         type: String,
         required: true
     },
